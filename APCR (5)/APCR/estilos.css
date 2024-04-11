@@ -1,0 +1,218 @@
+      /* Estilos para el cuerpo de la página */
+
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fdf0d5;
+      }
+      
+      /* Estilos para el contenedor principal */
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #003049;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 26px 26px 1px rgba(0, 0, 0, 0.3);
+
+        
+        /* Estilos para centrar el contenedor */
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container2{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container2 img{
+        height: 410px;
+      }
+      
+      /* Estilos para el encabezado */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fdf0d5;
+        font-size: 50px;
+      }
+      
+      /* Estilos para los campos de entrada */
+      input[type=text], input[type=password], input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+
+      }
+      
+      /* Estilos para los botones */
+      button {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        margin: 10px;
+
+
+      }
+      
+      /* Estilos para los botones de inicio de sesión y registro */
+      .loginbtn {
+        float: inline-start;
+        margin-left: 470px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 490px;
+      }
+      
+      .registro {
+        float: inline-end;
+        margin-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 185px;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 210px;
+        font-size: 30px;
+      }
+      
+      /* Estilos para los enlaces de registro y recuperación de contraseña */
+      .register, .forgot {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      /* Estilos para el enlace de registro */
+      .register {
+        color: #4CAF50;
+      }
+      
+      /* Estilos para el enlace de recuperación de contraseña */
+      .forgot {
+        color: #f44336;
+      }
+
+      .ingreso {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        font-size: 30px;
+
+        
+      }
+
+      .boton-ingreso{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .boton-registro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      b{
+        font-size: 25px;
+        color: #fdf0d5;
+      }
+
+      .footer h6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 15px;
+        color: #fdf0d5;
+      }
+
+      .olvido a{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-bottom: 60px;
+        color: #fdf0d5;
+      }
+
+      .check-clave{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 5px;
+        color: #fdf0d5;
+      }
+      /* Estilos para la ventana emergente en recuperar clave */
+      .modal {
+        display: none;
+        position: relative;
+        top: 260px;
+        left: 440px;
+        width: 50%;
+        height: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-size: 50px;
+
+      }
+
+      .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        
+      }
+      
+    /*Paleta Colores
+    780000
+    c1121f
+    fdf0d5
+    003049
+    669bbc
+    */

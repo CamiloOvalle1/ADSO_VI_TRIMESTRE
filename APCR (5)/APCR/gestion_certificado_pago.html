@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="../APCR/gestion_certificado_pago.css">
+</head> 
+<body>
+  <!-- Agrega aquí el código HTML -->
+
+  <div class="menu" aria-labelledby="menu-button">
+
+    <ul class="menu-list" id="menu-list" role="menu">
+      <button class="menu-button" title="Menú" id="menu-button" aria-expanded="false" aria-controls="menu-list">Menú<i class="material-icons">list</i></button>
+      <li><a class="tipo_boton" title="Administrar zonas" href="../APCR/adminzonas.html" role="menuitem">Administrar zonas<i class="material-icons" >directions_car</i></a>
+      <li><a class="tipo_boton" title="Mensajeria y pagos"  href="../APCR/admin_mens_pag.html" role="menuitem">Mensajeria y pagos<i class="material-icons">sms</i></a>
+      <li><a class="tipo_boton" title="Reportes" href="../APCR/modulo_admin_report.html" role="menuitem">Reportes<i class="material-icons">request_page</i></a>
+      <li><a class="tipo_boton" title="Administración usuarios" href="../APCR/asdministrador_usuario.html" role="menuitem">Administración usuarios<i class="material-icons">person</i></a>
+      <li><a class="tipo_boton" title="Salir" href="index.html" role="menuitem">Salir<i class="material-icons">exit_to_app</i></a></li>
+      <li>
+        <img class="logo" src="../APCR/img/logoapcr.png" alt="" >
+      </li>
+    </ul>
+  </div>
+  <div class="informacion">
+    <h1>Gestion de Certificados de Pago</h1>
+    <div class="contenido">
+      <img src="../APCR/img/logo-cert-pago.png" alt="" class="imagen">
+      <p>En este espacio podra realizar la descarga del <br>certificado de los pagos que ha realizado a la <br> administracion
+        los mismo.
+      </p>
+    </div>
+  </div>
+  <div>
+    <h2>Elija el año y mes a consultar</h2>      
+  </div>
+  <div class="cuadro">
+    <select name="opciones" id="opciones">
+           <option value="2023">2023</option>
+           <option value="2022">2022</option>
+           <option value="2021">2021</option>
+    </select>
+  </div>
+    <div class="cuadro">
+      <select name="opciones" id="opciones">
+             <option value="Septiembre">Septiembre</option>
+             <option value="Agosto">Agosto</option>
+             <option value="Julio">Julio</option>
+      </select>
+    </div>
+
+      <div class="contenido">
+          <img src="../APCR/img/acrobat-logo.png" alt="" class="imagen" id="acrobat" >
+          <button type="submit" class="input" onclick="abrirPDF()">Generar Certificado</button>
+      </div>
+    </div>
+
+  <footer>
+    <div class="footer">
+      <h1>
+        Realizado por SOFTNERD todos los derechos reservados &copy;
+      </h1>
+    </div>
+  </footer>
+
+  <script>
+    var menuButton = document.querySelector('.menu-button');
+    var menu = document.querySelector('.menu');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function() {
+      var expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('open');
+      if (menu.classList.contains('open')) {
+        menuList.querySelector('a').focus();
+      }
+    });
+
+    menuList.addEventListener('keydown', function(event) {
+      var firstItem = menuList.querySelector('a');
+      var lastItem = menuList.querySelectorAll('a')[menuList.querySelectorAll('a').length - 1];
+      var currentElement = event.target;
+      switch (event.keyCode) {
+        case 27: // Escape
+          menuButton.focus();
+          menuButton.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('open');
+          break;
+        case 37: // Left arrow
+          if (currentElement === firstItem) {
+            lastItem.focus();
+          } else {
+            currentElement.previousElementSibling.focus();
+          }
+          break;
+        case 39: // Right arrow
+          if (currentElement === lastItem) {
+            firstItem.focus();
+          } else {
+            currentElement.nextElementSibling.focus();
+          }
+          break;
+      }
+    });
+    
+    function abrirPDF() {
+      // Especifica la URL del archivo PDF que deseas abrir
+      var pdfURL = 'docs/certificado_pago.pdf';
+      
+      // Abre una nueva ventana del navegador con el PDF
+      window.open(pdfURL, '_blank');
+  }
+
+  </script>
+</body>
+</html>

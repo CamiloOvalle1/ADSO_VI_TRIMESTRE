@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <div class="container2">
+      <img src="../APCR/img/logoapcr.png" alt="">
+    </div>
+
+    <div class="container">
+      <h1>Recuperar Contraseña</h1>
+      <form action="../APCR/bdd/olvido_su_contraseña.php" method="post" charset=UTF-8>
+        <label for="correo"><b>Correo electrónico</b></label>
+        <input type="text" placeholder="Ingrese su correo electrónico" name="correo" required>
+        
+        <div class="boton-ingreso">
+          <button class="ingreso" onclick="mostrarModal()">Recuperar</button>
+        </div>
+      </form>
+
+      <div class="register">      
+      </div>
+    </div>
+
+    <div class="footer">
+      <h6>
+        Realizado por SOFTNERD todos los derechos reservados &copy;
+      </h6>
+    </div>
+
+    <!-- Ventana modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>Correo no registrado</p>
+          <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+      </div>
+      
+      <script>
+        function mostrarModal() {
+          var modal = document.getElementById("myModal");
+          modal.style.display = "block";
+        }
+      
+        function cerrarModal() {
+          var modal = document.getElementById("myModal");
+          modal.style.display = "none";
+          window.location.href = "index.html"; // Redireccionar a index.html
+        }
+
+        // Función para mostrar el modal automáticamente al cargar la página
+    window.onload = function() {
+        mostrarModal(); // Llama a la función para mostrar el modal al cargar
+      }
+      </script>
+  </body>
+</html>

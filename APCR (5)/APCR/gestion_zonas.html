@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion de Zonas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gestion_zonas.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+    <div class="menu" aria-labelledby="menu-button">
+
+      <ul class="menu-list" id="menu-list" role="menu">
+        <button class="menu-button" title="Menú" id="menu-button" aria-expanded="false" aria-controls="menu-list">Menú<i class="material-icons">list</i></button>
+        <li><a class="tipo_boton" title="Administrar zonas" href="../APCR/adminzonas.html" role="menuitem">Administrar zonas<i class="material-icons" >directions_car</i></a>
+        <li><a class="tipo_boton" title="Mensajeria y pagos"  href="../APCR/admin_mens_pag.html" role="menuitem">Mensajeria y pagos<i class="material-icons">sms</i></a>
+        <li><a class="tipo_boton" title="Reportes" href="../APCR/modulo_admin_report.html" role="menuitem">Reportes<i class="material-icons">request_page</i></a>
+        <li><a class="tipo_boton" title="Administración usuarios" href="../APCR/asdministrador_usuario.html" role="menuitem">Administración usuarios<i class="material-icons">person</i></a>
+        <li><a class="tipo_boton" title="Salir" href="index.html" role="menuitem">Salir<i class="material-icons">exit_to_app</i></a></li>
+        <li>
+          <img class="logo" src="../APCR/img/logoapcr.png" alt="" >
+        </li>
+      </ul>
+      </div>
+
+  <div id="container">
+      <header id="zonas">            
+        <h1>Gestion de Zonas</h1>
+      </header>
+      <div id="titulo">
+          <img id="img1" src="../APCR/img/img-zonas.png" alt="">
+          <h2 class="subtitulo">En este espacio podra realizar la separación de las zonas comunes del conjunto para fechas especiales</h2>
+      </div>
+      <div>
+        
+      <h2>Elija la Zona a solicitar</h2>
+      <div class="barra-opciones">
+        <select name="opciones" id="opciones">
+           <option value="elegir">Elegir</option>
+           <option value="parque_niños">Parque para Niños</option>
+           <option value="patio_principal">Patio Principal</option>
+           <option value="zona_bbq">Zona BBQ</option>
+           <option value="salon_comunal">Salon Comunal</option>
+        </select> 
+      </div>
+      <div id="boton-zona">
+        <button class="solicitar" onclick="location.href='solicitud_zonas.html'">Solicitar Zona</button>
+      </div>
+      <div id="boton-mas-zona">
+        <button class="mas" onclick="location.href= 'mas_asignaciones.html'">Mas asignaciones</button>
+      </div>
+            
+    <footer>
+        <div class="footer">
+          <h1>
+            Realizado por SOFTNERD todos los derechos reservados &copy;
+          </h1>
+        </div>
+    </footer>
+        
+    <script>
+        var menuButton = document.querySelector('.menu-button');
+        var menu = document.querySelector('.menu');
+        var menuList = document.querySelector('.menu-list');
+        
+        menuButton.addEventListener('click', function() {
+            var expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+            menuButton.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('open');
+            if (menu.classList.contains('open')) {
+                menuList.querySelector('a').focus();
+            }
+        });
+        
+        menuList.addEventListener('keydown', function(event) {
+            var firstItem = menuList.querySelector('a');
+            var lastItem = menuList.querySelectorAll('a')[menuList.querySelectorAll('a').length - 1];
+            var currentElement = event.target;
+            switch (event.keyCode) {
+            case 27: // Escape
+                menuButton.focus();
+                menuButton.setAttribute('aria-expanded', 'false');
+                menu.classList.remove('open');
+                break;
+            case 37: // Left arrow
+                if (currentElement === firstItem) {
+                lastItem.focus();
+                } else {
+                currentElement.previousElementSibling.focus();
+              }
+              break;
+            case 39: // Right arrow
+                if (currentElement === lastItem) {
+                firstItem.focus();
+                } else {
+                currentElement.nextElementSibling.focus();
+                }
+                break;
+              }
+            });
+    </script>     
+</body>
+</html>

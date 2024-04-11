@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+  </head>
+  <body>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <p>Contraseña o correo incorrectos</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarError() {
+      var modal = document.getElementById('myModal');
+      modal.style.display = 'block';
+    }
+
+    function cerrarModal() {
+      var modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+
+    // Función para mostrar el modal automáticamente al cargar la página
+    window.onload = function() {
+      mostrarError(); // Llama a la función para mostrar el modal al cargar
+    }
+  </script>
+
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   </div>
+
+   <div class="container2">
+    <img src="../APCR/img/logoapcr.png" alt="">
+   </div>
+    <div class="container">
+
+      <h1>Inicio de sesión</h1>
+      <form action="../APCR/bdd/inicio_sesion.php" method="post" charset=UTF-8> 
+        <label for="email"><b>Correo electrónico</b></label>
+        <input type="text" placeholder="Ingrese su correo electrónico" name="correo" required>
+
+        <label for="text"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingrese su contraseña" name="clave" required>
+
+        <div class="olvido">
+          <a href="olvidocontra.html">¿Olvidó su contraseña?</a>
+        </div>
+
+        <div class="check-clave">
+
+          <input type="checkbox" id="cbox1" value="first_checkbox" />Recordar clave</label>
+         </div> 
+
+         <div class="boton-ingreso">
+          <button class="ingreso" >Ingresar</button>
+        </div>
+        
+       <div class="boton-registro">
+        <button class="registerbtn" onclick="location.href='registro.html'">Registrarse</button>
+      </div>
+
+        <div class="register">      
+        </div>
+
+        
+         
+      <div class="footer">
+         <h6>
+            Realizado por SOFTNERD todos los derechos reservados &copy;
+          </h6>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    *{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: #fdf0d5;
+    }
+
+    /*Paleta Colores
+    780000
+    c1121f
+    fdf0d5
+    003049
+    669bbc
+    */
+
+    /* Agrega aquí el código CSS */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 350px;
+      height: 100%;
+      background-color: #003049;
+      transition: left 0.3s ease-in-out;
+      z-index: 1;
+    }
+
+    .menu.open {
+      left: 0;
+      width: 275px;
+    }
+
+    /* Modifica el estilo del botón Menú para centrar el texto y colocar el ícono a la derecha */
+    .menu-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Centra horizontalmente y coloca el ícono a la derecha */
+      width: 100%;
+      padding: 5px 10px 0px 20px;
+      background-color: #669bbc;
+      color: #fdf0d5;
+      border: none;
+      cursor: pointer;
+      font-size: 60px;
+    }
+
+    .menu-button .material-icons {
+      font-size: 35px;
+      margin-left: 10px; /* Espacio entre el texto y el icono */
+      font-size: 4 0px;
+    }
+
+ 
+
+    .menu-list {
+      margin-top: 0;
+      padding: 0;
+      text-align: right;
+      list-style: none;
+      text-decoration: bold;
+    }
+
+    .menu-list li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-list li a {
+      display: flex;
+      align-items: center;
+      padding: 0px 9px 0px 10px; /* Ajusta el padding según sea necesario */
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .menu-list li a .material-icons {
+      margin-left: auto; /* Coloca el icono a la derecha */
+
+      font-size: 35px;
+    }
+
+    .menu-list li a:hover {
+      background-color: #444;
+      transform: scale(1.01);
+      transition: transform .3s;
+    }
+
+    i {
+        margin-left: 12px; /* Espacio entre el icono y el texto */
+        vertical-align: middle;
+
+       
+    }
+
+    .tipo_boton{
+        margin-top: 90px;
+        border-radius: 50px;
+        text-align: right;
+        
+    }
+
+    .material-icons{
+      font-size: 35px;
+
+    }
+
+    .logo{
+      width: 200px;
+      height: 150px;
+      padding: 50px 40px 0px 0px;
+    }
+
+    .logo2{
+      width: 500px;
+      height: 400px;
+      align-items: center;
+    }
+
+
+
+    body{
+      background-color: #fdf0d5;
+    }
+
+    footer h1{
+      background-color: #780000;
+      display: flex;
+      justify-content: center;
+      color: fdf0d5;
+      padding: 15px;
+    }
+
+    .informacion h1{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    .informacion p{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-left: 50px;  
+        font-size: 30px;
+    }
+
+    .material-symbols-outlined {
+        color: black;
+        margin-left: 50px;
+        
+      font-variation-settings:
+         'FILL' 0,
+          'wght' 9700,
+          'GRAD' 200,
+          'opsz' 48
+          
+     }
+      
+    #layout-iconos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        height: 350px;
+        align-items: flex-start;
+        padding: 5px;
+        margin-top: 220px;
+
+    }
+    .caja{
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+
+    }
+ 
+
+    .red img{
+      width: 250px;
+    }
+
+    .green img{
+      width: 220px;
+      margin-bottom: 30px;
+    }
+
+    .parqueadero-enlace, .zonas-enlace{
+      color: #780000;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+
+  </style>
+</head> 
+<body>
+  <!-- Agrega aquí el código HTML -->
+
+  <div class="menu" aria-labelledby="menu-button">
+
+    <ul class="menu-list" id="menu-list" role="menu">
+      <button class="menu-button" title="Menú" id="menu-button" aria-expanded="false" aria-controls="menu-list">Menú<i class="material-icons">list</i></button>
+      <li><a class="tipo_boton" title="Administrar zonas" href="../APCR/adminzonas.html" role="menuitem">Administrar zonas<i class="material-icons" >directions_car</i></a>
+      <li><a class="tipo_boton" title="Mensajeria y pagos"  href="../APCR/admin_mens_pag.html" role="menuitem">Mensajeria y pagos<i class="material-icons">sms</i></a>
+      <li><a class="tipo_boton" title="Reportes" href="../APCR/modulo_admin_report.html" role="menuitem">Reportes<i class="material-icons">request_page</i></a>
+      <li><a class="tipo_boton" title="Administración usuarios" href="../APCR/asdministrador_usuario.html" role="menuitem">Administración usuarios<i class="material-icons">person</i></a>
+      <li><a class="tipo_boton" title="Salir" href="index.html" role="menuitem">Salir<i class="material-icons">exit_to_app</i></a></li>
+      <li>
+        <img class="logo" src="../APCR/img/logoapcr.png" alt="" >
+      </li>
+    </ul>
+  </div>
+  <div class="informacion">
+    <h1>Módulo de administración de zonas</h1>
+    <p>En este espaciopodrá realizar la gestión de zonas públicas y privadas <br>como parqueadero,
+        salones comunales, zonas BBQ, etre otros.
+    </p>
+  </div>
+
+  <section id="layout-iconos">
+    <div class="caja red">
+      <a href="../APCR/parqueaderos.html"><img class="zonasp" src="../APCR/img/coche-estacionado.png" alt=""></a><br>
+      <a class="parqueadero-enlace" href="../APCR/parqueaderos.html">Gestión Parqueadero</a>
+    </div>
+    <div class="caja green">
+      <a href="../APCR/gestion_zonas.html">
+        <img src="../APCR/img/bosque.png" alt="">
+        <img src="../APCR/img/bbq.png" alt="">
+        <img src="../APCR/img/calendario.png" alt="">
+      </a><br>
+      <a class="zonas-enlace" href="#">Zonas verdes, zonas de juego, zonas BBQ y salón comunal</a>
+    </div>
+</section>
+
+  <footer>
+    <div class="footer">
+      <h1>
+        Realizado por SOFTNERD todos los derechos reservados &copy;
+      </h1>
+    </div>
+  </footer>
+
+  <script>
+    var menuButton = document.querySelector('.menu-button');
+    var menu = document.querySelector('.menu');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function() {
+      var expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('open');
+      if (menu.classList.contains('open')) {
+        menuList.querySelector('a').focus();
+      }
+    });
+
+    menuList.addEventListener('keydown', function(event) {
+      var firstItem = menuList.querySelector('a');
+      var lastItem = menuList.querySelectorAll('a')[menuList.querySelectorAll('a').length - 1];
+      var currentElement = event.target;
+      switch (event.keyCode) {
+        case 27: // Escape
+          menuButton.focus();
+          menuButton.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('open');
+          break;
+        case 37: // Left arrow
+          if (currentElement === firstItem) {
+            lastItem.focus();
+          } else {
+            currentElement.previousElementSibling.focus();
+          }
+          break;
+        case 39: // Right arrow
+          if (currentElement === lastItem) {
+            firstItem.focus();
+          } else {
+            currentElement.nextElementSibling.focus();
+          }
+          break;
+      }
+    });
+  </script>
+</body>
+</html>

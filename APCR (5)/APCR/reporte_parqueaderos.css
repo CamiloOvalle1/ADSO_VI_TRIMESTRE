@@ -1,0 +1,273 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   /*  color: #fdf0d5; */
+  }
+
+  /*Paleta Colores
+  780000
+  c1121f
+  fdf0d5
+  003049
+  669bbc
+  */
+
+  /* Agrega aquí el código CSS */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 350px;
+    height: 100%;
+    background-color: #003049;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .menu.open {
+    left: 0;
+    width: 275px;
+  }
+
+  /* Modifica el estilo del botón Menú para centrar el texto y colocar el ícono a la derecha */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centra horizontalmente y coloca el ícono a la derecha */
+    width: 100%;
+    padding: 5px 10px 0px 20px;
+    background-color: #669bbc;
+    color: #fdf0d5;
+    border: none;
+    cursor: pointer;
+    font-size: 60px;
+  }
+
+  .menu-button .material-icons {
+    font-size: 35px;
+    margin-left: 10px; /* Espacio entre el texto y el icono */
+    font-size: 4 0px;
+  }
+
+
+
+  .menu-list {
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+    text-decoration: bold;
+  }
+
+  .menu-list li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li a {
+    display: flex;
+    align-items: center;
+    padding: 0px 9px 0px 10px; /* Ajusta el padding según sea necesario */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-list li a .material-icons {
+    margin-left: auto; /* Coloca el icono a la derecha */
+
+    font-size: 35px;
+  }
+
+  .menu-list li a:hover {
+    background-color: #444;
+    transform: scale(1.01);
+    transition: transform .3s;
+  }
+
+  i {
+      margin-left: 12px; /* Espacio entre el icono y el texto */
+      vertical-align: middle;
+
+     
+  }
+
+  .tipo_boton{
+      margin-top: 90px;
+      border-radius: 50px;
+      text-align: right;
+      
+  }
+
+  .material-icons{
+    font-size: 35px;
+
+  }
+
+  .logo{
+    width: 200px;
+    height: 150px;
+    padding: 50px 40px 0px 0px;
+  }
+
+  .logo2{
+    width: 500px;
+    height: 400px;
+    align-items: center;
+  }
+
+
+
+  body{
+    background-color: #fdf0d5;
+  }
+
+  footer h1{
+    background-color: #780000;
+    display: flex;
+    justify-content: center;
+    color: fdf0d5;
+    padding: 15px;
+    color: #fdf0d5;
+  }
+
+  .informacion {
+      display: flex;
+      flex-direction: column; 
+      align-items: left; 
+      text-align: left; 
+  }
+
+  .contenido {
+      display: flex;
+  }
+  .informacion h1{
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      margin-left: 50px;
+      font-size: 50px;
+  }
+
+  .informacion p{
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      margin-top: 50px;
+      margin-left: 50px;  
+      font-size: 30px;
+  }
+
+  .material-symbols-outlined {
+      color: black;
+      margin-left: 50px;
+      
+    font-variation-settings:
+       'FILL' 0,
+        'wght' 9700,
+        'GRAD' 200,
+        'opsz' 48
+        
+   }
+    
+  #layout-iconos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 650px;
+  align-items: flex-start;
+  padding: 5px;
+  margin-top: 90px;
+  }
+
+  .caja {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  }
+
+  .material-symbols-outlined {
+  color: green;
+  font-size: 94px;
+  }
+
+  .caja P{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0% ;
+    margin-left: 50px;
+  }
+
+  .informacion img{
+      width: 150px;
+      margin-left: 60px;
+      float: none;
+  }
+  .reporte {
+    display: flex;
+    justify-content: center;
+}
+.genreporte-enlace{
+    color: #780000;
+    font-size: 30px;
+    text-decoration: none;
+}
+.certpago img{
+    width: 150px;
+
+  }
+  .parqueadero-enlace, .certpago-enlace{
+    color: #780000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  /*  */
+  .ventana {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: #fdf0d5;
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.imagen{
+    width: 110px;
+    margin-left: 50px;
+    float: none;
+    align-content: center;
+}
+
+/*button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #201a1a;
+    cursor: pointer;
+}
+.vemergente h2{
+  display: block;
+  color: fdf0d5;
+}
+table{
+  width: 400px;
+  
+}
+td{
+  padding: 10px;
+}

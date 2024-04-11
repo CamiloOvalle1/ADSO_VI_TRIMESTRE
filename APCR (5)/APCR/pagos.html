@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar administracion</title>
+    <link rel="stylesheet" href="pagos.css">
+</head>
+<body>
+    <div id="layout">
+        <header id="header">
+            <h1>Pagar administracion</h1>
+        </header>
+
+
+        <section id="contenido">
+            <table id="tablec" width="100%">
+                <tr>
+                    <td><input type="text" name="Valor" id="Valor" size="70%" maxlength="10" placeholder="Valor"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="Cedula" id="Cedula" size="70%" maxlength="10" placeholder="Cedula" ></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="Nombre" id="Nombre" size="70%" maxlength="10" placeholder="Nombre"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="Torre" id="Torre" size="70%" maxlength="10" placeholder="Torre"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="Apartamento" id="Apartamento" size="70%" maxlength="10" placeholder="Apartamento"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center" ><a id= "boton-salir" href="mens_pagos.html"><div id="salir"><h3>Salir</h3></div></a></td>
+                </tr>
+            </table>
+        </section>
+
+        <aside id="lateral">
+            <table id="table-lat">
+                <tr>
+                    <td colspan="2"><h1 id="titulo-lat">Seleccione banco</h1></td>
+                </tr>
+                <tr>
+                    <td id="menu-desple" colspan="2" align="center"><select name="Banco" id="Banco">
+                        <option value="Nequi">Nequi</option>
+                        <option value="Davivienda">Davivienda</option>
+                        <option value="Bancolombia">Bancolombia</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="../APCR/img/icon-visa.png" width="50px" height="50px"></td>
+                    <td align="center"><img src="../APCR/img/icon-pse.jpg" width="50px" height="50px"></td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="../APCR/img/icon-mastercard.png" width="50px" height="50px"></td>
+                    <td align="center"><img src="../APCR/img/icon-paypal.png" width="50px" height="50px"></td>
+                </tr>
+            </table>
+        </aside>
+        
+
+    </div>
+</body>
+</html>

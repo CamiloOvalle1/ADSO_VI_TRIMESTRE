@@ -1,0 +1,213 @@
+/* Inicio Barra */
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #fdf0d5;
+  }
+  
+  /*Paleta Colores
+  780000
+  c1121f
+  fdf0d5
+  003049
+  669bbc
+  */
+  
+  /* Agrega aquí el código CSS */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 350px;
+    height: 100%;
+    background-color: #003049;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .menu.open {
+    left: 0;
+    width: 275px;
+  }
+  
+  /* Modifica el estilo del botón Menú para centrar el texto y colocar el ícono a la derecha */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centra horizontalmente y coloca el ícono a la derecha */
+    width: 100%;
+    padding: 5px 10px 0px 20px;
+    background-color: #669bbc;
+    color: #fdf0d5;
+    border: none;
+    cursor: pointer;
+    font-size: 60px;
+  }
+  
+  .menu-button .material-icons {
+    font-size: 35px;
+    margin-left: 10px; /* Espacio entre el texto y el icono */
+    font-size: 4 0px;
+  }
+  
+  
+  
+  .menu-list {
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+    text-decoration: bold;
+  }
+  
+  .menu-list li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-list li a {
+    display: flex;
+    align-items: center;
+    padding: 0px 9px 0px 10px; /* Ajusta el padding según sea necesario */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-list li a .material-icons {
+    margin-left: auto; /* Coloca el icono a la derecha */
+  
+    font-size: 35px;
+  }
+  
+  .menu-list li a:hover {
+    background-color: #444;
+    transform: scale(1.01);
+    transition: transform .3s;
+  }
+  
+  i {
+      margin-left: 12px; /* Espacio entre el icono y el texto */
+      vertical-align: middle;
+  
+     
+  }
+  
+  .tipo_boton{
+      margin-top: 90px;
+      border-radius: 50px;
+      text-align: right;
+      
+  }
+  
+  .material-icons{
+    font-size: 35px;
+  
+  }
+  
+  .logo{
+    width: 200px;
+    height: 150px;
+    padding: 50px 40px 0px 0px;
+  }
+  
+  .logo2{
+    width: 500px;
+    height: 400px;
+    align-items: center;
+  }
+  
+  .bienvenida{
+    color: #003049;
+    font-size: 140px;
+    padding-left: 50px;
+    text-align: center;
+    text-shadow: 3px 3px 8px black;
+    margin-top: 60px;
+  }
+  
+  .logo-principal{
+    display: flex;
+    justify-content: center;
+  }
+  
+  body{
+    background-color: #fdf0d5;
+  }
+  
+  footer{
+    background-color: #780000;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  
+  /* Fin Barra */
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf0d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 32px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 90%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;/* alineacion e la parte superior */
+    color: #000;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+tr{
+    border-radius: 10px;
+}
+
+#tabla{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 700px;
+}
+#calendario{
+    background-color: aqua;
+}
+#salir{
+  background-color: #c1121f;
+  color: #fff;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5%;
+ 
+}
+#salir:hover {
+background-color: #c1121e81;
+}
+

@@ -1,0 +1,303 @@
+
+[
+      {
+        "id_parqueadero": 1,
+        "nombre_propietario": "Juan Pérez",
+        "numero_torre": 1,
+        "apartamento": 101,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "ABC123",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 2,
+        "nombre_propietario": "María López",
+        "numero_torre": 2,
+        "apartamento": 201,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "XYZ456",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 3,
+        "nombre_propietario": "Carlos Gómez",
+        "numero_torre": 1,
+        "apartamento": 301,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "DEF789",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 4,
+        "nombre_propietario": "Ana Martínez",
+        "numero_torre": 3,
+        "apartamento": 401,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 5,
+        "nombre_propietario": "Pedro Ramirez",
+        "numero_torre": 2,
+        "apartamento": 501,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "GHI987",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 6,
+        "nombre_propietario": "Laura González",
+        "numero_torre": 1,
+        "apartamento": 601,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 7,
+        "nombre_propietario": "Javier Castro",
+        "numero_torre": 3,
+        "apartamento": 701,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "JKL321",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 8,
+        "nombre_propietario": "Sofía Ramírez",
+        "numero_torre": 2,
+        "apartamento": 801,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 9,
+        "nombre_propietario": "Daniel Fernández",
+        "numero_torre": 1,
+        "apartamento": 901,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "MNO456",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 10,
+        "nombre_propietario": "Paola Martínez",
+        "numero_torre": 3,
+        "apartamento": 1001,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 11,
+        "nombre_propietario": "Alejandro Sánchez",
+        "numero_torre": 2,
+        "apartamento": 1101,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "PQR789",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 12,
+        "nombre_propietario": "Lucía Pérez",
+        "numero_torre": 1,
+        "apartamento": 1201,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 13,
+        "nombre_propietario": "Martín López",
+        "numero_torre": 3,
+        "apartamento": 1301,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "STU987",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 14,
+        "nombre_propietario": "Carolina Ruiz",
+        "numero_torre": 2,
+        "apartamento": 1401,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 15,
+        "nombre_propietario": "Andrés García",
+        "numero_torre": 1,
+        "apartamento": 1501,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 16,
+        "nombre_propietario": "Valentina Soto",
+        "numero_torre": 3,
+        "apartamento": 1601,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 17,
+        "nombre_propietario": "David Torres",
+        "numero_torre": 2,
+        "apartamento": 1701,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "YZA456",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 18,
+        "nombre_propietario": "Natalia Gómez",
+        "numero_torre": 1,
+        "apartamento": 1801,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 19,
+        "nombre_propietario": "Diego Herrera",
+        "numero_torre": 3,
+        "apartamento": 1901,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "BCD789",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 20,
+        "nombre_propietario": "Elena Ruiz",
+        "numero_torre": 2,
+        "apartamento": 2001,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 21,
+        "nombre_propietario": "Hugo Díaz",
+        "numero_torre": 1,
+        "apartamento": 2101,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "CDE123",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 22,
+        "nombre_propietario": "Luciana Páez",
+        "numero_torre": 3,
+        "apartamento": 2201,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 23,
+        "nombre_propietario": "Sebastián Ramírez",
+        "numero_torre": 2,
+        "apartamento": 2301,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "EFG789",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 24,
+        "nombre_propietario": "Camila Fernández",
+        "numero_torre": 1,
+        "apartamento": 2401,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 25,
+        "nombre_propietario": "Gabriel Sánchez",
+        "numero_torre": 3,
+        "apartamento": 2501,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "HIJ987",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 26,
+        "nombre_propietario": "Valeria Gutiérrez",
+        "numero_torre": 2,
+        "apartamento": 2601,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 27,
+        "nombre_propietario": "Adrián Martínez",
+        "numero_torre": 1,
+        "apartamento": 2701,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 28,
+        "nombre_propietario": "Julieta López",
+        "numero_torre": 3,
+        "apartamento": 2801,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Motocicleta",
+        "placa": "",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 29,
+        "nombre_propietario": "Diego Ramírez",
+        "numero_torre": 2,
+        "apartamento": 2901,
+        "estado": "Ocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "KLM456",
+        "fecha": "2024-04-02"
+      },
+      {
+        "id_parqueadero": 30,
+        "nombre_propietario": "Sara Fernández",
+        "numero_torre": 1,
+        "apartamento": 3001,
+        "estado": "Desocupado",
+        "tipo_vehiculo": "Automóvil",
+        "placa": "",
+        "fecha": "2024-04-02"
+      }
+    ]

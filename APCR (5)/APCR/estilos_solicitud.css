@@ -1,0 +1,150 @@
+      /* Estilos para el cuerpo de la página */
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fdf0d5;
+      }
+      
+      /* Estilos para el contenedor principal */
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #003049;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 26px 26px 1px rgba(0, 0, 0, 0.3);
+
+        
+        /* Estilos para centrar el contenedor */
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container2{
+    
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+      
+      }
+
+      .container2 img{
+        height: 410px;
+      } 
+      
+      /* Estilos para el encabezado */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #003049;
+        font-size: 50px;
+      }
+      
+      /* Estilos para los campos de entrada */
+      input[type=text], input[type=password], input[type=number], input[type=datetime-local] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+
+      }
+      
+      .fecha{
+        width: 300px;
+        height: 20px;
+      }
+
+      /* Estilos para los botones */
+      button {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        align-items: center;
+        
+
+      }
+      
+      /* Estilos para los botones de inicio de sesión y registro */
+      .solicitud {
+        display: flex;
+        justify-content: center;
+        float: inline-start;
+        margin-left: 470px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #c1121f;
+        color: #fdf0d5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 8px;
+        margin: 30px;
+      }
+      
+      #solicitud1{
+        display: flex;
+        justify-content: center;
+      }
+
+      #opciones{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+      }
+      
+      /* Estilos para el enlace de recuperación de contraseña */
+      .forgot {
+        color: #f44336;
+      }
+
+      
+      .boton-solicitud{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      b{
+        font-size: 25px;
+        color: #fdf0d5;
+      }
+
+      .footer h6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 15px;
+        color: #fdf0d5;
+      }
+
+    /*Paleta Colores
+    780000
+    c1121f
+    fdf0d5
+    003049
+    669bbc
+    */

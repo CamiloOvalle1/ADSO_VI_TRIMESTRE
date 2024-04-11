@@ -1,0 +1,92 @@
+body {
+  background-color: #fdf0d5;}
+html, body {
+  height: 100% !important;
+}
+.tableApp{
+  min-height: 100% !important;
+  height: 100% !important;
+}
+body{
+  text-transform: uppercase;
+}
+input{
+  text-transform: lowercase;
+}
+button{
+  text-transform: uppercase;
+}
+.preload{
+  width: 100%;  
+  height: 100vh;
+  position: fixed;
+  z-index: 2000;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.174);
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Espacio igual entre los elementos */
+}
+
+.flex-item {
+  flex: 0 0 20%; /* Cada elemento ocupa el 20% del contenedor */
+}
+#table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px; /* ajusta este valor según sea necesario */
+  margin: 0 auto;
+  padding: 20px;
+  width: 10%;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Espacio igual entre los elementos */
+  width: 20%;
+  
+}
+
+.flex-item {
+  flex: 0 0 10%; /* Cada elemento ocupa el 20% del contenedor */
+  width: 10%;
+  
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start; 
+  
+  height: 100px; 
+  
+}
+
+.btn-group{
+  width: 100px; /* Ancho deseado */
+  height: 100px; /* Alto deseado */
+  font-size: 100px; 
+  /* Tamaño de la fuente */
+  
+
+}
+.img{
+  width: 110%; /* Ancho deseado */
+  height: 110%; /* Alto deseado */
+  font-size: 100px; /* Tamaño de la fuente */
+
+
+}
+.modal-title1{
+  font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: #000000;
+        
+}
+.btn{
+  background-color: rgb(223, 229, 175);
+}
+.btn:hover{
+  background-color: rgb(216, 226, 136);
+}

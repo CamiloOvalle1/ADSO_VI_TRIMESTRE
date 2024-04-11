@@ -1,0 +1,216 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #fdf0d5;
+  }
+
+  /*Paleta Colores
+  780000
+  c1121f
+  fdf0d5
+  003049
+  669bbc
+  */
+
+  /* Agrega aquí el código CSS */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 350px;
+    height: 100%;
+    background-color: #003049;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .menu.open {
+    left: 0;
+    width: 275px;
+  }
+
+  /* Modifica el estilo del botón Menú para centrar el texto y colocar el ícono a la derecha */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centra horizontalmente y coloca el ícono a la derecha */
+    width: 100%;
+    padding: 5px 10px 0px 20px;
+    background-color: #669bbc;
+    color: #fdf0d5;
+    border: none;
+    cursor: pointer;
+    font-size: 60px;
+  }
+
+  .menu-button .material-icons {
+    font-size: 35px;
+    margin-left: 10px; /* Espacio entre el texto y el icono */
+    font-size: 4 0px;
+  }
+
+
+
+  .menu-list {
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+    text-decoration: bold;
+  }
+
+  .menu-list li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li a {
+    display: flex;
+    align-items: center;
+    padding: 0px 9px 0px 10px; /* Ajusta el padding según sea necesario */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-list li a .material-icons {
+    margin-left: auto; /* Coloca el icono a la derecha */
+
+    font-size: 35px;
+  }
+
+  .menu-list li a:hover {
+    background-color: #444;
+    transform: scale(1.01);
+    transition: transform .3s;
+  }
+
+  i {
+      margin-left: 12px; /* Espacio entre el icono y el texto */
+      vertical-align: middle;
+
+     
+  }
+
+  .tipo_boton{
+      margin-top: 90px;
+      border-radius: 50px;
+      text-align: right;
+      
+  }
+
+  .material-icons{
+    font-size: 35px;
+
+  }
+
+  .logo{
+    width: 200px;
+    height: 150px;
+    padding: 50px 40px 0px 0px;
+  }
+
+  .logo2{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+  }
+  .logo3{
+      width: 250px;
+      height: 250px;
+      justify-content: right;
+      position: absolute;
+      left: 60%;
+      top: 48%;
+    }
+
+  .bienvenida{
+    color: #003049;
+    font-size: 50px;
+    padding-left: 50px;
+    text-align: left;
+    text-shadow: 3px 3px 8px black;
+    margin-top: 40px;
+
+  
+  }
+  .parrafo{
+      color: #003049;
+      font-size: 20px;
+      padding-left: 20px;
+      text-align: left;
+      text-shadow: 3px 3px 8px black;
+      margin-top: 30px;
+      width: 50%;
+  }
+
+
+  .logo-estacionamiento{
+    display: flex;
+    justify-content: left;
+    padding-left: 120px;
+    margin-top: 160px;
+  }
+  .logo-cert-pago{
+      display: flex;
+      justify-content: right;
+      padding-right: 120px;
+      margin-top: 160px;
+    }
+
+  body{
+    background-color: #fdf0d5;
+  }
+  .informacion h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 50px;
+    font-size: 50px;
+  }
+
+  .informacion p{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 50px;  
+    font-size: 30px;
+  }
+  #layout-iconos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 350px;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 220px;
+
+  }
+  .caja{
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  .parking img{
+    width: 250px;
+  }
+  /*.parking img{
+    width: 220px;
+    margin-bottom: 30px;
+  }*/
+  .certpago img{
+    width: 250px;
+
+  }
+  .parqueadero-enlace, .certpago-enlace{
+    color: #780000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+
+  footer h1{
+    background-color: #780000;
+    display: flex;
+    justify-content: center;
+    color: fdf0d5;
+    padding: 15px;
+  }
